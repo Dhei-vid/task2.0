@@ -1,4 +1,5 @@
 import "./button.styles.scss";
+import { HiPlusCircle } from "react-icons/hi2";
 
 interface IButton {
   isDelete?: boolean;
@@ -17,29 +18,19 @@ const Button: React.FC<IButton> = ({
 }) => {
   return (
     <div>
-      {isDelete && (
-        <div>
-          <div></div>
-        </div>
-      )}
+      {isDelete && <button className="isDeleteBtn">Delete</button>}
 
-      {isSave && (
-        <div>
-          <div></div>
-        </div>
-      )}
+      {isSave && <button className="isSaveBtn">Save</button>}
 
       {isEdit && (
-        <div>
-          <button className={"isEditBtn"} onClick={onPress}>
-            Edit
-          </button>
-        </div>
+        <button className={"isEditBtn"} onClick={onPress}>
+          Edit
+        </button>
       )}
 
       {isAdd && (
-        <div>
-          <div></div>
+        <div onClick={onPress} className="isAddBtn">
+          <HiPlusCircle size={70} color="#123EB1" />
         </div>
       )}
     </div>

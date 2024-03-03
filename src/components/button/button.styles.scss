@@ -1,4 +1,17 @@
 .isDeleteBtn {
+  color: white;
+  background-color: #720d0d;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.isDeleteBtn:hover {
+  border: solid 1px #720d0d;
+  background-color: transparent;
+  cursor: pointer;
+  color: #720d0d;
 }
 
 .isEditBtn {
@@ -17,7 +30,26 @@
 }
 
 .isAddBtn {
+  transition: all ease-in-out 0.5s;
+}
+
+.isAddBtn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .isSaveBtn {
+  border: none;
+  color: white;
+  background-color: #0d2972;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.isSaveBtn:hover {
+  border: solid 1px #071d55;
+  background-color: transparent;
+  cursor: pointer;
+  color: #071d55;
 }

@@ -15,7 +15,7 @@ const TaskCard: React.FC<ITaskCard> = ({ checked, title }) => {
         {checked ? <Checked /> : <UnChecked />}
         <p className="taskCardTitle">{title}</p>
       </div>
-      <Button isEdit onPress={() => console.log("Pressed")} />
+      <Button isEdit onPress={() => console.log("Edited btn")} />
     </div>
   );
 };

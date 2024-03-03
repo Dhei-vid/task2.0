@@ -1,6 +1,7 @@
 import { TodoMenuBar } from "../menuBar/menu-bar-component";
 import GoPro from "../goPro/go-pro.component";
 import TaskCardList from "../taskCardList/task-card-list.components";
+import Button from "../button/button.components";
 import "./todo.styles.scss";
 
 const Todo = () => {
@@ -15,6 +16,10 @@ const Todo = () => {
       />
       <GoPro />
       <TaskCardList />
+
+      <div className={"addBtnContainer"}>
+        <Button isAdd onPress={() => console.log("Add btn")} />
+      </div>
     </div>
   );
 };

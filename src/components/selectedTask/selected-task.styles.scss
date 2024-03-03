@@ -1,0 +1,26 @@
+.selectedTaskContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.selectedTaskContainer:last-child {
+  align-self: baseline;
+}
+
+.selectedTaskTitle {
+  font-weight: 500;
+}
+
+.btnContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: space-between;
+  gap: 20px;
+  border: #720d0d 2px solid;
+}
+
+.btnItem:last-child {
+  align-self: baseline;
+}
