@@ -1,5 +1,6 @@
 import "./selected-task.styles.scss";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 import TextInput from "../textInput/text-input.component";
 import Button from "../button/button.components";
 
