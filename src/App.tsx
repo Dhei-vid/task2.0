@@ -5,8 +5,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Todo />
-      <EditTask />
+      <section className="menuBar">
+        <Todo />
+        <EditTask />
+      </section>
     </div>
   );
 }

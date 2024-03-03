@@ -1,20 +1,42 @@
 .background {
   background-color: #3556ab;
-  padding: 2rem;
+  padding: 1.5rem 1rem;
+  height: 5rem;
+}
+
+.shadowMenuBar {
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
 
 .todoMain {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 10px;
 }
 
 .imageContainer {
-  align-self: flex-start;
+}
+
+.image {
+  width: 55px;
+  height: 55px;
+  border-radius: 1000px;
 }
 
 .todoTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todoBodyText {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+
+.border {
   border: red 1px solid;
 }
 
@@ -34,16 +56,4 @@
 
 .header {
   font-weight: 600;
-}
-
-.todoBodyText {
-  font-weight: lighter;
-  font-style: italic;
-  font-size: 1.5rem;
-}
-
-.image {
-  width: 50px;
-  height: 50px;
-  border-radius: 1000px;
 }

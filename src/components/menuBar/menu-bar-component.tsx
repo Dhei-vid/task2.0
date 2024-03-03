@@ -12,15 +12,15 @@ export const TodoMenuBar: React.FC<ITodoMenuBar> = ({
   image,
 }) => {
   return (
-    <div className="background">
+    <div className="background shadowMenuBar">
       <div className="todoMain">
         <div className="imageContainer">
           <img className={"image"} src={image} alt="" />
         </div>
 
         <div className="todoTextContainer">
-          <p className="header textColor">{header}</p>
-          <p className="todoBodyText textColor">{body}</p>
+          <span className="header textColor">{header}</span>
+          <span className="todoBodyText textColor">{body}</span>
         </div>
       </div>
     </div>
@@ -33,8 +33,10 @@ interface IEditMenuBar {
 
 export const EditMenuBar: React.FC<IEditMenuBar> = ({ header }) => {
   return (
-    <div className="background editMain">
-      <p className="textColor editText">{header}</p>
+    <div className="background">
+      <div className="editMain">
+        <p className="textColor editText">{header}</p>
+      </div>
     </div>
   );
 };
