@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  background-color: #cde53d;
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.svg {
+  width: 53px;
+  height: 41px;
+}
+
+.gopro_text {
+  font-weight: 800;
+  color: #071d55;
+}
