@@ -6,8 +6,8 @@ const GoPro = () => {
     <div className="main">
       <Trophy />
       <p className="gopro_text">Go Pro Upgrade Now</p>
-      <div>
-        <p className="gopro_text">$1</p>
+      <div className="dollar_tag">
+        <p className="dollar_text">$1</p>
       </div>
     </div>
   );

@@ -1,0 +1,16 @@
+.taskCardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  //   border: 1px solid;
+  margin: 2rem 1rem;
+  padding: 1rem;
+}
+
+.taskCardTitle {
+  font-size: 1.1rem;
+}
