@@ -14,7 +14,7 @@ export const TodoMenuBar: React.FC<ITodoMenuBar> = ({
   return (
     <div className="background shadowMenuBar">
       <div className="todoMain">
-        <div className="imageContainer">
+        <div>
           <img className={"image"} src={image} alt="" />
         </div>
 

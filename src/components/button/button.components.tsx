@@ -7,6 +7,7 @@ interface IButton {
   isEdit?: boolean;
   isAdd?: boolean;
   onPress: () => void;
+  style?: string;
 }
 
 const Button: React.FC<IButton> = ({
@@ -15,21 +16,22 @@ const Button: React.FC<IButton> = ({
   isEdit,
   isAdd,
   onPress,
+  style,
 }) => {
   return (
     <div>
-      {isDelete && <button className="isDeleteBtn">Delete</button>}
+      {isDelete && <button className={`isDeleteBtn ${style}`}>Delete</button>}
 
-      {isSave && <button className="isSaveBtn">Save</button>}
+      {isSave && <button className={`isSaveBtn ${style}`}>Save</button>}
 
       {isEdit && (
-        <button className={"isEditBtn"} onClick={onPress}>
+        <button className={`isEditBtn ${style}`} onClick={onPress}>
           Edit
         </button>
       )}
 
       {isAdd && (
-        <div onClick={onPress} className="isAddBtn">
+        <div onClick={onPress} className={`isAddBtn ${style}`}>
           <HiPlusCircle size={70} color="#123EB1" />
         </div>
       )}
