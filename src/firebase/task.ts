@@ -5,6 +5,7 @@ import {
   doc,
   updateDoc,
   addDoc,
+  deleteDoc,
   serverTimestamp,
 } from "firebase/firestore/lite";
 import { ITask } from "../common/types";
@@ -85,5 +86,15 @@ export const createTask = async (taskData: ITask) => {
   } catch (error) {
     console.error("Error creating task:", error);
     throw error; // Rethrow the error for the caller to handle
+  }
+};
+
+export const deleteTask = async (taskId: string) => {
+  try {
+    const taskRef = doc(db, "tasks", taskId); // 'tasks' is the collection name
+    await deleteDoc(taskRef);
+    console.log("Task deleted successfully");
+  } catch (error) {
+    console.error("Error deleting task:", error);
   }
 };
